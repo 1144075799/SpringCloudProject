@@ -1,57 +1,60 @@
+spring:
+  application:
+    name: ad-eureka
+
+server:
+  port: 9000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false   # 是否从eureka Server获取注册信息 默认是true，因为这次是单节点的Eureka Server 不需要同步其他节点的数据
+    register-with-eureka: false # 是否将自己注册到eureka Server
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+#---
+### 服务的高可用
 #spring:
 #  application:
 #    name: ad-eureka
-#
+#  profiles: server1
 #server:
 #  port: 9000
-#
 #eureka:
 #  instance:
 #    hostname: localhost
+#    prefer-ip-address: false # 不需要ip地址去注册
 #  client:
-#    fetch-registry: false   # 是否从eureka Server获取注册信息 默认是true，因为这次是单节点的Eureka Server 不需要同步其他节点的数据
-#    register-with-eureka: false # 是否将自己注册到eureka Server
 #    service-url:
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
----
-spring:
-  application:
-    name: ad-eureka
-  profiles: server1
-server:
-  port: 9000
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: false # 不需要ip地址去注册
-  client:
-    service-url:
-      defaultZone: http://localhost:9001/eureka/,http://localhost:9002/eureka/
----
-spring:
-  application:
-    name: ad-eureka
-  profiles: server2
-server:
-  port: 9001
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: false # 不需要ip地址去注册
-  client:
-    service-url:
-      defaultZone: http://localhost:9000/eureka/,http://localhost:9002/eureka/
----
-spring:
-  application:
-    name: ad-eureka
-  profiles: server3
-server:
-  port: 9002
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: false # 不需要ip地址去注册
-  client:
-    service-url:
-      defaultZone: http://localhost:9000/eureka/,http://localhost:9001/eureka/
+#      defaultZone: http://localhost:9001/eureka/,http://localhost:9002/eureka/
+#---
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server2
+#server:
+#  port: 9001
+#eureka:
+#  instance:
+#    hostname: localhost
+#    prefer-ip-address: false # 不需要ip地址去注册
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:9000/eureka/,http://localhost:9002/eureka/
+#---
+#spring:
+#  application:
+#    name: ad-eureka
+#  profiles: server3
+#server:
+#  port: 9002
+#eureka:
+#  instance:
+#    hostname: localhost
+#    prefer-ip-address: false # 不需要ip地址去注册
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:9000/eureka/,http://localhost:9001/eureka/
