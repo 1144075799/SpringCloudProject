@@ -6,7 +6,11 @@
 
   <groupId>com.springCloudAd</groupId>
   <artifactId>springCloud-ad</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>ad-eureka</module>
+  </modules>
 
   <name>springCloud-ad</name>
   <description>Project For Ad SpringCloud</description>
@@ -45,7 +49,7 @@
     <dependencies>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud.dependencies</artifactId>
+        <artifactId>spring-cloud-dependencies</artifactId>
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
