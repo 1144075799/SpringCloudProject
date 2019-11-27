@@ -11,7 +11,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "ad_unit_keyword")
-public class AdUtilKeyword {
+public class AdUnitKeyword {
 
 
     @Id
@@ -25,7 +25,7 @@ public class AdUtilKeyword {
     @Column(name = "keyword",nullable = false)
     private String keyword;
 
-    public AdUtilKeyword(Long unitId,String keyword){
+    public AdUnitKeyword(Long unitId, String keyword){
         this.unitId = unitId;
         this.keyword = keyword;
     }
