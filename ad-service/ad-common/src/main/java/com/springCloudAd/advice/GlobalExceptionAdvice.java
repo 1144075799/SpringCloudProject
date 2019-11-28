@@ -1,7 +1,7 @@
 package com.springCloudAd.advice;
 
 import com.springCloudAd.exception.AdException;
-import com.springCloudAd.vo.CommonResponse;
+import com.springCloudAd.client.vo.CommonResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

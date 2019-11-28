@@ -1,16 +1,16 @@
-package com.springCloudAd.vo;
+package com.springCloudAd.client.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AdUnitItResponse {
+public class AdPlanResponse {
 
-    private List<Long> ids;
+    private Long id;
+    private String planName;
+
 
 }

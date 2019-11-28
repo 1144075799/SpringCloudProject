@@ -1,4 +1,4 @@
-package com.springCloudAd.vo;
+package com.springCloudAd.client.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.springCloudAd.vo;
+package com.springCloudAd.client.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,8 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreativeUnitResponse {
+public class AdUnitItResponse {
 
     private List<Long> ids;
 
 }
-

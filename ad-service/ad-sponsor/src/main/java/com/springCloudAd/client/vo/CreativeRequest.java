@@ -1,4 +1,4 @@
-package com.springCloudAd.vo;
+package com.springCloudAd.client.vo;
 
 import com.springCloudAd.constant.CommonStatus;
 import com.springCloudAd.entity.Creative;

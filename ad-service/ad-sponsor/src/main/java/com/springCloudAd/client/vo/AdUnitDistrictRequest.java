@@ -1,4 +1,4 @@
-package com.springCloudAd.vo;
+package com.springCloudAd.client.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,16 +9,17 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AdUnitKeyWordRequest {
+public class AdUnitDistrictRequest {
 
-    private List<UnitKeyword> unitKeywords;
+    private List<UnitDistrict> unitDistricts;
+
 
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class UnitKeyword{
+    public static class UnitDistrict{
         private Long unitId;
-        private String keyword;
+        private String province;
+        private String city;
     }
-
 }

@@ -1,7 +1,7 @@
 package com.springCloudAd.service;
 
 import com.springCloudAd.exception.AdException;
-import com.springCloudAd.vo.*;
+import com.springCloudAd.client.vo.*;
 
 public interface IAdUnitService {
 

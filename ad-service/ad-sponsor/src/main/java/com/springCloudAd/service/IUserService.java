@@ -1,8 +1,8 @@
 package com.springCloudAd.service;
 
 import com.springCloudAd.exception.AdException;
-import com.springCloudAd.vo.CreateUserRequest;
-import com.springCloudAd.vo.CreateUserResponse;
+import com.springCloudAd.client.vo.CreateUserRequest;
+import com.springCloudAd.client.vo.CreateUserResponse;
 
 public interface IUserService {
 

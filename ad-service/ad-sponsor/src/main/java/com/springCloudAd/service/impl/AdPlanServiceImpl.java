@@ -9,9 +9,9 @@ import com.springCloudAd.entity.AdUser;
 import com.springCloudAd.exception.AdException;
 import com.springCloudAd.service.IAdPlanService;
 import com.springCloudAd.utils.CommonUtils;
-import com.springCloudAd.vo.AdPlanGetRequest;
-import com.springCloudAd.vo.AdPlanRequest;
-import com.springCloudAd.vo.AdPlanResponse;
+import com.springCloudAd.client.vo.AdPlanGetRequest;
+import com.springCloudAd.client.vo.AdPlanRequest;
+import com.springCloudAd.client.vo.AdPlanResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

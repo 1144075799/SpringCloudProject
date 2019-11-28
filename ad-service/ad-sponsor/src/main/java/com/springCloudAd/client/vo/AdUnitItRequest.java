@@ -1,4 +1,4 @@
-package com.springCloudAd.vo;
+package com.springCloudAd.client.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,17 +9,18 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreativeUnitRequest {
+public class AdUnitItRequest {
 
-    private List<CreativeUnitItem> unitItems;
+    private List<UnitIt> unitIts;
 
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    public static class CreativeUnitItem {
+    public static class UnitIt{
 
-        private Long creativeId;
         private Long unitId;
+        private String itTag;
+
     }
 
 }

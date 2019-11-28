@@ -1,7 +1,7 @@
 package com.springCloudAd.service;
 
-import com.springCloudAd.vo.CreativeRequest;
-import com.springCloudAd.vo.CreativeResponse;
+import com.springCloudAd.client.vo.CreativeRequest;
+import com.springCloudAd.client.vo.CreativeResponse;
 
 public interface ICreativeService {
 

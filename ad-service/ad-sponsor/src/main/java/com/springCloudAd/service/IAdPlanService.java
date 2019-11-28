@@ -2,9 +2,9 @@ package com.springCloudAd.service;
 
 import com.springCloudAd.entity.AdPlan;
 import com.springCloudAd.exception.AdException;
-import com.springCloudAd.vo.AdPlanGetRequest;
-import com.springCloudAd.vo.AdPlanRequest;
-import com.springCloudAd.vo.AdPlanResponse;
+import com.springCloudAd.client.vo.AdPlanGetRequest;
+import com.springCloudAd.client.vo.AdPlanRequest;
+import com.springCloudAd.client.vo.AdPlanResponse;
 
 import java.util.List;
 

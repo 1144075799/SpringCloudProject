@@ -3,8 +3,8 @@ package com.springCloudAd.service.impl;
 import com.springCloudAd.dao.CreativeRepository;
 import com.springCloudAd.entity.Creative;
 import com.springCloudAd.service.ICreativeService;
-import com.springCloudAd.vo.CreativeRequest;
-import com.springCloudAd.vo.CreativeResponse;
+import com.springCloudAd.client.vo.CreativeRequest;
+import com.springCloudAd.client.vo.CreativeResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
